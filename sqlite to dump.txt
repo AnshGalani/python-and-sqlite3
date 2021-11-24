@@ -1,0 +1,14 @@
+DUMP==========================
+.output test.sql
+.dump
+.quit
+
+CSV=======================
+
+sqlite>.headers on
+sqlite> .mode csv
+sqlite> .output test.csv
+sqlite> select id ,
+   ...> name from student;
+sqlite> .quit
+
